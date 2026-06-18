@@ -177,7 +177,7 @@ var EX = {
       {name:'Staffing coverage',type:'next',tag:'illustrative',why:'The next agent can skip building what the first one already mapped: personnel, shifts, incidents, locations.'},
       {name:'Incident reporting',type:'next',tag:'illustrative',why:'Operational context and records are already structured. The second agent should be easier to justify because some of the hard work is already done.'},
       {name:'Equipment readiness',type:'next',tag:'illustrative',why:'Vehicle, inventory, incident, and maintenance data can now connect. No new integration work needed.'},
-      {name:'Teams stand up new agents faster over time.',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
+      {name:'Teams stand up new agents faster over time',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
     ],
     closeex:'DealFlow and TicketMind reflect this pattern. One painful, repeated workflow, then the next one got easier to justify.'
   },
@@ -192,7 +192,7 @@ var EX = {
       {name:'Resolution drafting',type:'next',tag:'illustrative',why:'Customer history, product context, and resolution patterns are already mapped. The next agent can skip that work.'},
       {name:'Proactive case detection',type:'next',tag:'illustrative',why:'Usage and support signals are already connected. Surfacing at-risk accounts before they escalate becomes a short step.'},
       {name:'Renewal and churn signals',type:'next',tag:'illustrative',why:'Support patterns and CRM data are now linked. Revenue teams can see what support already knows.'},
-      {name:'Teams stand up new agents faster over time.',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
+      {name:'Teams stand up new agents faster over time',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
     ],
     closeex:'TicketMind reflects this pattern. Solve one painful workflow, then the next agent gets easier to justify.'
   },
@@ -207,9 +207,9 @@ var EX = {
       {name:'Approval chain tracking',type:'next',tag:'illustrative',why:'Approval history and ERP data are already connected. The next agent can skip rebuilding that.'},
       {name:'Close process coordination',type:'next',tag:'illustrative',why:'Month-end context is already structured. The second agent picks up where the first one left off.'},
       {name:'Spend and variance signals',type:'next',tag:'illustrative',why:'Once the data is mapped, surfacing anomalies before they become problems is a short step, not a new project.'},
-      {name:'Teams stand up new agents faster over time.',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
+      {name:'Teams stand up new agents faster over time',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
     ],
-    closeex:’Squid AI’s financial-operations work reflects the same pattern. Not by automating decisions, by removing everything around them.'
+    closeex:’Squid AI’s financial-operations work reflects the same pattern. Not by automating decisions, by removing everything around them.’
   }
 };
 
@@ -219,7 +219,7 @@ function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g
 
 function build(key){
   var e = EX[key];
-  document.getElementById('prompt').innerHTML = '<b>What’s breaking down</b>' + esc(e.prompt);
+  document.getElementById(‘prompt’).innerHTML = ‘<b>What’s breaking down</b>’ + esc(e.prompt);
   document.getElementById('removes').innerHTML = e.removes.map(function(x){return '<li><span class="dot go"></span><span>'+esc(x)+'</span></li>';}).join('');
   document.getElementById('stays').innerHTML = e.stays.map(function(x){return '<li><span class="dot stay"></span><span>'+esc(x)+'</span></li>';}).join('');
   document.getElementById('note').textContent = e.note;
