@@ -209,7 +209,7 @@ var EX = {
       {name:'Spend and variance signals',type:'next',tag:'illustrative',why:'Once the data is mapped, surfacing anomalies before they become problems is a short step, not a new project.'},
       {name:'Teams stand up new agents faster over time',type:'top',tag:'vision',why:'The broader platform vision, reached by proving one workflow at a time, because the hard connection work is already done.'}
     ],
-    closeex:’Squid AI’s financial-operations work reflects the same pattern. Not by automating decisions, by removing everything around them.’
+    closeex:'Squid AI\u2019s financial-operations work reflects the same pattern. Not by automating decisions, by removing everything around them.'
   }
 };
 
@@ -219,7 +219,7 @@ function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g
 
 function build(key){
   var e = EX[key];
-  document.getElementById(‘prompt’).innerHTML = ‘<b>What’s breaking down</b>’ + esc(e.prompt);
+  document.getElementById('prompt').innerHTML = '<b>What\u2019s breaking down</b>' + esc(e.prompt);
   document.getElementById('removes').innerHTML = e.removes.map(function(x){return '<li><span class="dot go"></span><span>'+esc(x)+'</span></li>';}).join('');
   document.getElementById('stays').innerHTML = e.stays.map(function(x){return '<li><span class="dot stay"></span><span>'+esc(x)+'</span></li>';}).join('');
   document.getElementById('note').textContent = e.note;
