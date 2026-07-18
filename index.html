@@ -36,6 +36,9 @@
   }
   .wrap{max-width:720px;margin:0 auto;padding:64px 28px 96px}
   .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 18px}
+  .brandline{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+  .brandline .eyebrow{margin-bottom:0}
+  .appmark{width:28px;height:28px;flex-shrink:0}
   .eyebrow .mark{color:var(--accent)}
   h1{font-family:var(--serif);font-weight:500;font-size:30px;line-height:1.18;letter-spacing:-.01em;margin:0 0 22px;max-width:18ch}
   .lede{font-family:var(--serif);font-weight:400;font-size:19px;line-height:1.5;color:var(--ink);margin:0 0 40px;max-width:54ch}
@@ -125,7 +128,15 @@
 </head>
 <body>
 <main class="wrap">
-  <p class="eyebrow"><span class="mark">First Rung</span> &nbsp;·&nbsp; initial thinking</p>
+  <div class="brandline">
+    <svg class="appmark" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 2.4C22.2 1.3 29.6 5.4 29.6 12.8c0 3.4-1 6.4-3.6 8.9-2.9 2.8-7 4.2-11 3.7C6.8 24.7 2.4 20.4 2.4 14.6 2.4 7.6 8.4 3.4 16 2.4Z" fill="var(--accent-soft)"/>
+      <rect x="7" y="18.5" width="6.5" height="3.2" rx="1" fill="var(--accent)"/>
+      <rect x="12.75" y="13.4" width="6.5" height="3.2" rx="1" fill="var(--accent)"/>
+      <rect x="18.5" y="8.3" width="6.5" height="3.2" rx="1" fill="var(--accent)"/>
+    </svg>
+    <p class="eyebrow"><span class="mark">First Rung</span> &nbsp;·&nbsp; initial thinking</p>
+  </div>
   <h1>Choosing the first workflow worth building around.</h1>
   <p class="lede">The first workflow should be <em>boring in the right way</em>: painful, repeated, hard to coordinate, and valuable enough that solving it makes the second agent easier to justify.</p>
 
